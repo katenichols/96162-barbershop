@@ -6,13 +6,11 @@
   </head>
   <body>
     <header class="catalog-header">
+      <a href="#">
+        <img src="http://placehold.it/111x20" name="little-logo" width="111" height="20" alt="Главная">
+      </a>
       <nav class="catalog-navigation">
         <ul>
-          <li>
-            <a href="#">
-              <img src="http://placehold.it/111x20" name="little-logo" width="111" height="20" alt="Главная">
-            </a>
-          </li>
           <li>
             <a href="#">Информация</a>
           </li>
@@ -24,7 +22,6 @@
           </li>
           <li>
             <a href="#">Магазин</a>
-            <div class="navigation-active"></div>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -32,19 +29,22 @@
         </ul>
       </nav>
       <div class="user-block">
-        <div class="user-block-image"></div>
-        <a class="login" href="#">Вход</a>
+        <a class="login" href="#"><span></span>Вход</a>
       </div>
     </header>
     <main class="catalog-content">
       <h1 class="catalog-title">Средства для ухода</h1>
-      <div class="breadcrumbs">
-        <a href "#">Главная</a>
-        <div class="separator"></div>
-        <a href="#">Магазин</a>
-        <div class="separator"></div>
-        <span>Средства для ухода</span>
-      </div>
+      <ul class="breadcrumbs">
+        <li>
+          <a href "#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Магазин</a>
+        </li>
+        <li>
+          <span>Средства для ухода<span>
+        </li>
+      </ul>
       <section class="catalog-filters">
         <form class="filters"
           <section class="manufacturers">
@@ -86,7 +86,7 @@
       <section class="catalog-goods">
         <div class="good-item">
           <div class="good-image">
-            <a>
+            <a href="#">
               <img src="http://placehold.it/220x165" width="220" height="165" alt="">
               <span class="good-name">Набор для путешествий "Baxter of California"</span>
             </a>
@@ -145,22 +145,20 @@
           </div>
         </div>
       </section>
-      <nav class="pagination">
-        <ul>
-          <li>
-            <a href="#">1</a>
-          </li>
-          <li>
-            <a class="page-active" href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li>
-            <a href="#">4</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="pagenation">
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a class="page-active" href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+      </ul>
     </main>
     <footer class="catalog-footer">
       <div class="footer-contacts">
