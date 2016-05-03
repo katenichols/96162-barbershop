@@ -1,0 +1,19 @@
+body {
+  background:#242424 repeat;
+  width:1200px;
+  min-height:1125px;
+  position: relative;
+}
+
+h1 {
+  font-family: "PT Sans Narrow Bold";
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.catalog-header {
+  width: 1200 px;
+  height: 72px;
+  background-color: #000000;
+}
