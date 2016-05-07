@@ -7,9 +7,11 @@
   </head>
   <body>
     <header class="catalog-header">
-      <a href="#">
-        <img src="img/logo.png" name="little-logo" width="111" height="24" alt="Главная">
-      </a>
+      <div class="logo">
+        <a href="#"> <!-- ссылка — строчный элемент, лучше такие оборачивать в блочные, обычный div с классом подойдет-->
+          <img src="img/logo.png" width="111" height="24" alt="Главная"> <!-- атрибут name не нужен-->
+        </a>
+      </div>
       <nav class="catalog-navigation">
         <ul>
           <li>
@@ -30,7 +32,7 @@
         </ul>
       </nav>
       <div class="user-block">
-        <a class="login" href="#"><span></span>Вход</a>
+        <a class="login" href="#"><span class="enter-icon"></span>Вход</a> <!-- класс для спана не забудь-->
       </div>
     </header>
     <main class="item-content">
@@ -54,14 +56,20 @@
           <div class="big-photo">
             <img src="img/big-item.png" width="486" height="524">
           </div>
-          <div class="small-photo">
-            <img src="img/small-item1.png" width="166" height="175">
+          <div class="small-photo"> <!-- маленькие картинки лучше обернуть в ссылки-->
+            <a href="#">
+              <img src="img/small-item1.png" width="166" height="175">
+            </a>
           </div>
           <div class="small-photo">
-            <img src="img/small-item2.png" width="166" height="175">
+            <a href="#">
+              <img src="img/small-item2.png" width="166" height="175">
+            </a>
           </div>
           <div class="small-photo">
-            <img src="img/small-item3.png" width="166" height="175">
+            <a href="#">
+              <img src="img/small-item3.png" width="166" height="175">
+            </a>
           </div>
         </section>
         <section class="description">
@@ -79,21 +87,11 @@
           <div class="kit">
             <h3 class="">В НАБОР ВХОДЯТ:</h3>
             <ul>
-              <li>
-                <p>Средство для умывания (50 мл)</p>
-              </li>
-              <li>
-                <p>Увлажняющий крем (50 мл)</p>
-              </li>
-              <li>
-                <p>Крем для бритья (50 мл)</p>
-              </li>
-              <li>
-                <p>Крем после бритья, шампунь (50 мл)</p>
-              </li>
-              <li>
-                <p>Удобная кожаная косметичка (50 мл)</p>
-              </li>
+              <li>Средство для умывания (50 мл)</li> <!-- параграф не нужен здесь, текст можно прямо в li оставить-->
+              <li>Увлажняющий крем (50 мл)</li>
+              <li>Крем для бритья (50 мл)</li>
+              <li>Крем после бритья, шампунь (50 мл)</li>
+              <li>Удобная кожаная косметичка (50 мл)</li>
             </ul>
           </div>
         </section>
@@ -103,7 +101,7 @@
       <div class="footer-contacts">
         <p>Барбершоп "Бородинский"<br>
            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-           <a href="#">КАК НАС НАЙТИ?</a>
+           <a href="#">Как нас найти?</a>
            Телефон: <a href="tel:74956660266">+7 (495) 666-02-66</a>
         </p>
       </div>
